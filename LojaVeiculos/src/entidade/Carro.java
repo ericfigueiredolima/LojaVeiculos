@@ -7,14 +7,14 @@ import objetoDeValor.TipoCarro;
 
 public class Carro extends Veiculo{
 
-    private String chassi;
-    private String modelo;
-    private float motorizacao;
-    private float preco;
-    private Cor cor;
-    private Cambio cambio;
-    private MontadoraCarro montadora;
-    private TipoCarro tipo;
+     String chassi;
+     String modelo;
+     float motorizacao;
+     float preco;
+     Cor cor;
+     Cambio cambio;
+     MontadoraCarro montadora;
+     TipoCarro tipo;
 
     public Carro() {
     }
