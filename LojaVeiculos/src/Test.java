@@ -90,7 +90,8 @@ public class Test {
             }
         }
 
-        System.out.println("Informe o preco do carro (Ex.: 15000.30, 23500):");
+        System.out.println("Informe o preco do carro (Ex.: 15000,30 / 23500):");
+
         while (true) {
             try {
                 float preco = sc.nextFloat();
