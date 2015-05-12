@@ -91,7 +91,7 @@ public class Test {
         while (true) {
             try {
                 float preco = sc.nextFloat();
-                novoCarro.setPreco(preco);
+                novoCarro.setPreço(preco);
                 break;
             } catch (InputMismatchException e) {
                 System.out.println("Valor informado para a motorizacao deve ser um numero decimal. Tente novamente:");
@@ -220,7 +220,7 @@ public class Test {
         carro.setModelo("Focus Hatch");
         carro.setMontadora(MontadoraCarro.FORD);
         carro.setMotorizacao(1.6f);
-        carro.setPreco(68.000f);
+        carro.setPreço(68.000f);
         carro.setTipo(TipoCarro.HATCH);
 
         loja.adicionarCarro(carro);
@@ -244,7 +244,7 @@ public class Test {
         moto.setCor(Cor.AZUL);
         moto.setModelo("Focus Hatch");
         moto.setMontadora(MontadoraMoto.HARLEY_DAVIDSON);
-        moto.setPreco(68.000f);
+        moto.setPreço(68.000f);
         moto.setTipo(TipoMoto.ESPORTIVA);
 
         loja.adicionarMoto(moto);
