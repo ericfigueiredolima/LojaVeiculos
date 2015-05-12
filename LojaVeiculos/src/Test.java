@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Test {
 
     Scanner sc = new Scanner(System.in);
-    Loja loja; //loja
+    //variável loja para usar os métodos da classe loja
 
     public static void main(String[] args) {
         Test t = new Test();
