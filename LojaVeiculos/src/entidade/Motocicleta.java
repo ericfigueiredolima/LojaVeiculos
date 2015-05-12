@@ -4,7 +4,7 @@ import objetoDeValor.Cor;
 import objetoDeValor.MontadoraMoto;
 import objetoDeValor.TipoMoto;
 
-public class Motocicleta {
+public class Motocicleta extends Veiculo{
 
     private String chassi;
     private String modelo;
