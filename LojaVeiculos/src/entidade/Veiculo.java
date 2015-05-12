@@ -3,10 +3,10 @@ import objetoDeValor.Cor;
 
 public abstract class Veiculo {
 	
-	   String chassi;
-	   String modelo;
+	   protected String chassi;
+	   protected String modelo;
 	   Cor cor;
-	   float preço;
+	   protected float preço;
 	
 	
    public String getChassi() {
