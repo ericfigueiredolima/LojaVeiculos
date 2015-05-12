@@ -82,6 +82,7 @@ public class Test {
             try {
                 float motorizacao = sc.nextFloat();
                 novoCarro.setMotorizacao(motorizacao);
+                sc.nextLine();
                 break;
             } catch (InputMismatchException e) {
                 System.out.println("Valor informado para a motorizacao deve ser um numero decimal. Tente novamente:");
@@ -94,6 +95,7 @@ public class Test {
             try {
                 float preco = sc.nextFloat();
                 novoCarro.setPreço(preco);
+                sc.nextLine();
                 break;
             } catch (InputMismatchException e) {
                 System.out.println("Valor informado para a motorizacao deve ser um numero decimal. Tente novamente:");
@@ -114,12 +116,14 @@ public class Test {
             try {
                 cor = sc.next();
                 novoCarro.setCor(Cor.valueOf(cor.toUpperCase()));
+                sc.nextLine();
                 break;
             } catch (Exception e) {
                 try
                 {
                     int corValor = Integer.parseInt(cor);
                     novoCarro.setCor(Cor.values()[corValor-1]);
+                    sc.nextLine();
                     break;
                 }
                 catch (Exception ex) {
@@ -195,12 +199,14 @@ public class Test {
             try {
                 tipo = sc.next();
                 novoCarro.setTipo(TipoCarro.valueOf(tipo.toUpperCase()));
+                sc.nextLine();
                 break;
             } catch (Exception e) {
                 try
                 {
                     int tipoValor = Integer.parseInt(tipo);
                     novoCarro.setTipo(TipoCarro.values()[tipoValor-1]);
+                    sc.nextLine();
                     break;
                 }
                 catch (Exception ex) {
