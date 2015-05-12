@@ -71,9 +71,11 @@ public class Test {
 
         System.out.println("Informe o chassi do carro (Ex.: F23021):");
         novoCarro.setChassi(sc.next());
+        sc.nextLine(); //tipo um fflush
 
         System.out.println("Informe o modelo do carro (Ex.: Focus Hatch):");
         novoCarro.setModelo(sc.next());
+        sc.nextLine();
 
         System.out.println("Informe a motorizacao do carro (Ex.: 1.0, 1.6, 2.0):");
         while (true) {
