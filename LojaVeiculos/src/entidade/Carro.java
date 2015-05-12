@@ -6,12 +6,7 @@ import objetoDeValor.MontadoraCarro;
 import objetoDeValor.TipoCarro;
 
 public class Carro extends Veiculo{
-
-     String chassi;
-     String modelo;
      float motorizacao;
-     float preco;
-     Cor cor;
      Cambio cambio;
      MontadoraCarro montadora;
      TipoCarro tipo;
@@ -38,44 +33,12 @@ public class Carro extends Veiculo{
         this.tipo = tipo;
     }
 
-    public String getChassi() {
-        return chassi;
-    }
-
-    public void setChassi(String chassi) {
-        this.chassi = chassi;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
     public float getMotorizacao() {
         return motorizacao;
     }
 
     public void setMotorizacao(float motorizacao) {
         this.motorizacao = motorizacao;
-    }
-
-    public float getPreco() {
-        return preco;
-    }
-
-    public void setPreco(float preco) {
-        this.preco = preco;
-    }
-
-    public Cor getCor() {
-        return cor;
-    }
-
-    public void setCor(Cor cor) {
-        this.cor = cor;
     }
 
     public Cambio getCambio() {
