@@ -41,7 +41,7 @@ public class Test {
             opcao = sc.nextInt();
 
             switch (opcao) {
-                case 0:
+                case 0: //é tipo um default
                     break;
                 case 1:
                     adicionarCarro();
@@ -75,14 +75,14 @@ public class Test {
 
         System.out.println("Informe o modelo do carro (Ex.: Focus Hatch):");
         novoCarro.setModelo(sc.next());
-        sc.nextLine();
+        sc.nextLine(); 
 
-        System.out.println("Informe a motorizacao do carro (Ex.: 1,0 / 1,6 / 2,0):");
+        System.out.println("Informe a motorizacao do carro (Ex.: 1,0/ 1,6/ 2,0):");
         while (true) {
             try {
                 float motorizacao = sc.nextFloat();
-                novoCarro.setMotorizacao(motorizacao);
                 sc.nextLine();
+                novoCarro.setMotorizacao(motorizacao);
                 break;
             } catch (InputMismatchException e) {
                 System.out.println("Valor informado para a motorizacao deve ser um numero decimal. Tente novamente:");
@@ -102,6 +102,7 @@ public class Test {
                 sc.nextLine();
             }
         }
+        System.out.println("Informe a Cor do carro: ");
 
         ArrayList<Cor> cores = new ArrayList<Cor>(Arrays.asList(Cor.values()));
         for (int i = 0; i < cores.size(); i++) {
@@ -132,7 +133,9 @@ public class Test {
                 }
             }
         }
+        
 
+        System.out.println("Informe o Câmbio do carro: ");
         ArrayList<Cambio> cambios = new ArrayList<Cambio>(Arrays.asList(Cambio.values()));
         for (int i = 0; i < cambios.size(); i++) {
             System.out.print((i + 1) + "-" + cambios.get(i) + " ");
@@ -145,12 +148,14 @@ public class Test {
             try {
                 cambio = sc.next();
                 novoCarro.setCambio(Cambio.valueOf(cambio.toUpperCase()));
+                sc.nextLine();
                 break;
             } catch (Exception e) {
                 try
                 {
                     int cambioValor = Integer.parseInt(cambio);
                     novoCarro.setCambio(Cambio.values()[cambioValor-1]);
+                    sc.nextLine();
                     break;
                 }
                 catch (Exception ex) {
@@ -159,6 +164,8 @@ public class Test {
                 }
             }
         }
+        
+        System.out.println("Informe a Montadora do Carro: ");
 
         ArrayList<MontadoraCarro> montadoras = new ArrayList<MontadoraCarro>(Arrays.asList(MontadoraCarro.values()));
         for (int i = 0; i < montadoras.size(); i++) {
@@ -172,12 +179,14 @@ public class Test {
             try {
                 montadora = sc.next();
                 novoCarro.setMontadora(MontadoraCarro.valueOf(montadora.toUpperCase()));
+                sc.nextLine();
                 break;
             } catch (Exception e) {
                 try
                 {
                     int montadoraValor = Integer.parseInt(montadora);
                     novoCarro.setMontadora(MontadoraCarro.values()[montadoraValor-1]);
+                    sc.nextLine();
                     break;
                 }
                 catch (Exception ex) {
@@ -186,6 +195,8 @@ public class Test {
                 }
             }
         }
+        
+        System.out.println("Informe o Tipo do Carro: ");
 
         ArrayList<TipoCarro> tipos = new ArrayList<TipoCarro>(Arrays.asList(TipoCarro.values()));
         for (int i = 0; i < tipos.size(); i++) {
