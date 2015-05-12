@@ -18,7 +18,7 @@ public class Carro extends Veiculo{ //com a herança da classe Veiculo,não prec
         this.chassi = chassi;
         this.modelo = modelo;
         this.motorizacao = motorizacao;
-        this.preco = preco;
+        this.preço = preco;
         this.cor = cor;
         this.cambio = cambio;
         this.montadora = montadora;
@@ -63,7 +63,7 @@ public class Carro extends Veiculo{ //com a herança da classe Veiculo,não prec
                 "chassi='" + chassi + '\'' +
                 ", modelo='" + modelo + '\'' +
                 ", motorizacao=" + motorizacao +
-                ", preco=" + preco +
+                ", preco=" + preço +
                 ", cor=" + cor +
                 ", cambio=" + cambio +
                 ", montadora=" + montadora +
