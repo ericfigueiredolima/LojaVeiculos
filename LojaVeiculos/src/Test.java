@@ -77,7 +77,7 @@ public class Test {
         novoCarro.setModelo(sc.next());
         sc.nextLine();
 
-        System.out.println("Informe a motorizacao do carro (Ex.: 1.0, 1.6, 2.0):");
+        System.out.println("Informe a motorizacao do carro (Ex.: 1,0 / 1,6 / 2,0):");
         while (true) {
             try {
                 float motorizacao = sc.nextFloat();
