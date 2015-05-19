@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Test {
 
     Scanner sc = new Scanner(System.in);
-    //variável loja para usar os métodos da classe loja
+    Loja loja; //loja
 
     public static void main(String[] args) {
         Test t = new Test();
@@ -77,7 +77,7 @@ public class Test {
         novoCarro.setModelo(sc.next());
         sc.nextLine(); 
 
-        System.out.println("Informe a motorizacao do carro (Ex.: 1,0/ 1,6/ 2,0):");
+        System.out.println("Informe a motorizacao do carro (Ex.: 1,0 / 1,6/ 2,0):");
         while (true) {
             try {
                 float motorizacao = sc.nextFloat();
@@ -91,7 +91,6 @@ public class Test {
         }
 
         System.out.println("Informe o preco do carro (Ex.: 15000,30 / 23500):");
-
         while (true) {
             try {
                 float preco = sc.nextFloat();
@@ -168,7 +167,7 @@ public class Test {
         
         System.out.println("Informe a Montadora do Carro: ");
 
-        ArrayList<MontadoraCarro> montadoras = new ArrayList<MontadoraCarro>(Arrays.asList(MontadoraCarro.values()));
+        ArrayList<EspecificacaoCarro.Montadora> montadoras = new ArrayList<EspecificacaoCarro.Montadora>(Arrays.asList(EspecificacaoCarro.Montadora.values()));
         for (int i = 0; i < montadoras.size(); i++) {
             System.out.print((i + 1) + "-" + montadoras.get(i) + " ");
             if ((i + 1) % 10 == 0)
@@ -179,14 +178,14 @@ public class Test {
         while (true) {
             try {
                 montadora = sc.next();
-                novoCarro.setMontadora(MontadoraCarro.valueOf(montadora.toUpperCase()));
+                novoCarro.setMontadora(EspecificacaoCarro.Montadora.valueOf(montadora.toUpperCase()));
                 sc.nextLine();
                 break;
             } catch (Exception e) {
                 try
                 {
                     int montadoraValor = Integer.parseInt(montadora);
-                    novoCarro.setMontadora(MontadoraCarro.values()[montadoraValor-1]);
+                    novoCarro.setMontadora(EspecificacaoCarro.Montadora.values()[montadoraValor-1]);
                     sc.nextLine();
                     break;
                 }
@@ -199,7 +198,7 @@ public class Test {
         
         System.out.println("Informe o Tipo do Carro: ");
 
-        ArrayList<TipoCarro> tipos = new ArrayList<TipoCarro>(Arrays.asList(TipoCarro.values()));
+        ArrayList<EspecificacaoCarro.TipoCarro> tipos = new ArrayList<EspecificacaoCarro.TipoCarro>(Arrays.asList(EspecificacaoCarro.TipoCarro.values()));
         for (int i = 0; i < tipos.size(); i++) {
             System.out.print((i + 1) + "-" + tipos.get(i) + " ");
             if ((i + 1) % 10 == 0)
@@ -210,14 +209,14 @@ public class Test {
         while (true) {
             try {
                 tipo = sc.next();
-                novoCarro.setTipo(TipoCarro.valueOf(tipo.toUpperCase()));
+                novoCarro.setTipo(EspecificacaoCarro.TipoCarro.valueOf(tipo.toUpperCase()));
                 sc.nextLine();
                 break;
             } catch (Exception e) {
                 try
                 {
                     int tipoValor = Integer.parseInt(tipo);
-                    novoCarro.setTipo(TipoCarro.values()[tipoValor-1]);
+                    novoCarro.setTipo(EspecificacaoCarro.TipoCarro.values()[tipoValor-1]);
                     sc.nextLine();
                     break;
                 }
@@ -238,10 +237,10 @@ public class Test {
         carro.setChassi("F00001");
         carro.setCor(Cor.AZUL);
         carro.setModelo("Focus Hatch");
-        carro.setMontadora(MontadoraCarro.FORD);
+        carro.setMontadora(EspecificacaoCarro.Montadora.FORD);
         carro.setMotorizacao(1.6f);
         carro.setPreço(68.000f);
-        carro.setTipo(TipoCarro.HATCH);
+        carro.setTipo(EspecificacaoCarro.TipoCarro.HATCH);
 
         loja.adicionarCarro(carro);
 
@@ -263,9 +262,9 @@ public class Test {
         moto.setChassi("F00001");
         moto.setCor(Cor.AZUL);
         moto.setModelo("Focus Hatch");
-        moto.setMontadora(MontadoraMoto.HARLEY_DAVIDSON);
+        moto.setMontadora(EspecificacaoMoto.Montadora.HARLEY_DAVIDSON);
         moto.setPreço(68.000f);
-        moto.setTipo(TipoMoto.ESPORTIVA);
+        moto.setTipo(EspecificacaoMoto.TipoMoto.ESPORTIVA);
 
         loja.adicionarMoto(moto);
 
