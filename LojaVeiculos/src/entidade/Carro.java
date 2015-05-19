@@ -2,19 +2,19 @@ package entidade;
 
 import objetoDeValor.Cambio;
 import objetoDeValor.Cor;
-import objetoDeValor.MontadoraCarro;
-import objetoDeValor.TipoCarro;
+import objetoDeValor.EspecificacaoCarro;
+
 
 public class Carro extends Veiculo{ //com a herança da classe Veiculo,não preciso reescrever as variáveis protegidas na classe veículo e fazer os getters and setters,além de poder utilizá-las
      float motorizacao;
      Cambio cambio;
-     MontadoraCarro montadora;
-     TipoCarro tipo;
+     EspecificacaoCarro.Montadora montadora;
+     EspecificacaoCarro.TipoCarro tipo;
 
     public Carro() {
     }
 
-    public Carro(String chassi, String modelo, float motorizacao, float preco, Cor cor, Cambio cambio, MontadoraCarro montadora, TipoCarro tipo) {
+    public Carro(String chassi, String modelo, float motorizacao, float preco, Cor cor, Cambio cambio, EspecificacaoCarro.Montadora montadora, EspecificacaoCarro.TipoCarro tipo) {
         this.chassi = chassi;
         this.modelo = modelo;
         this.motorizacao = motorizacao;
@@ -25,11 +25,11 @@ public class Carro extends Veiculo{ //com a herança da classe Veiculo,não prec
         this.tipo = tipo;
     }
 
-    public TipoCarro getTipo() {
+    public EspecificacaoCarro.TipoCarro getTipo() {
         return tipo;
     }
 
-    public void setTipo(TipoCarro tipo) {
+    public void setTipo(EspecificacaoCarro.TipoCarro tipo) {
         this.tipo = tipo;
     }
 
@@ -49,11 +49,11 @@ public class Carro extends Veiculo{ //com a herança da classe Veiculo,não prec
         this.cambio = cambio;
     }
 
-    public MontadoraCarro getMontadora() {
+    public EspecificacaoCarro.Montadora getMontadora() {
         return montadora;
     }
 
-    public void setMontadora(MontadoraCarro montadora) {
+    public void setMontadora(EspecificacaoCarro.Montadora montadora) {
         this.montadora = montadora;
     }
 
