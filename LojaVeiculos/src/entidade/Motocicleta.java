@@ -1,19 +1,19 @@
 package entidade;
 
 import objetoDeValor.Cor;
-import objetoDeValor.MontadoraMoto;
-import objetoDeValor.TipoMoto;
+import objetoDeValor.EspecificacaoMoto;
+
 
 public class Motocicleta extends Veiculo{
     private int cilindrada;
     private int capacidadeTanque;
-    private TipoMoto tipo;
-    private MontadoraMoto montadora;
+    private EspecificacaoMoto.TipoMoto tipo;
+    private EspecificacaoMoto.Montadora montadora;
 
     public Motocicleta() {
     }
 
-    public Motocicleta(String chassi, String modelo, int cilindrada, int capacidadeTanque, float preco, Cor cor, TipoMoto tipo, MontadoraMoto montadora) {
+    public Motocicleta(String chassi, String modelo, int cilindrada, int capacidadeTanque, float preco, Cor cor, EspecificacaoMoto.TipoMoto tipo, EspecificacaoMoto.Montadora montadora) {
         this.chassi = chassi;
         this.modelo = modelo;
         this.cilindrada = cilindrada;
@@ -40,19 +40,19 @@ public class Motocicleta extends Veiculo{
         this.capacidadeTanque = capacidadeTanque;
     }
 
-    public TipoMoto getTipo() {
+    public EspecificacaoMoto.TipoMoto getTipo() {
         return tipo;
     }
 
-    public void setTipo(TipoMoto tipo) {
+    public void setTipo(EspecificacaoMoto.TipoMoto tipo) {
         this.tipo = tipo;
     }
 
-    public MontadoraMoto getMontadora() {
+    public EspecificacaoMoto.Montadora getMontadora() {
         return montadora;
     }
 
-    public void setMontadora(MontadoraMoto montadora) {
+    public void setMontadora(EspecificacaoMoto.Montadora montadora) {
         this.montadora = montadora;
     }
 
