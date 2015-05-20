@@ -8,7 +8,7 @@ public class Motocicleta extends Veiculo{
     private int cilindrada;
     private int capacidadeTanque;
     private EspecificacaoMoto.TipoMoto tipo;
-    private EspecificacaoMoto.Montadora montadora;
+    private EspecificacaoMoto.Montadora montadora; //montadora
 
     public Motocicleta() {
     }
