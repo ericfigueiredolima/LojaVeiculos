@@ -1,19 +1,17 @@
 package entidade;
 
-import objetoDeValor.Cor;
-import objetoDeValor.EspecificacaoMoto;
+import objetoDeValor.*;
 
+public class Motocicleta extends Veiculo {
+	private int cilindrada;
+	private int capacidadeTanque;
+	private EspecificacaoMoto.TipoMoto tipo;
+	private EspecificacaoMoto.Montadora montadora;
 
-public class Motocicleta extends Veiculo{
-    private int cilindrada;
-    private int capacidadeTanque;
-    private EspecificacaoMoto.TipoMoto tipo;
-    private EspecificacaoMoto.Montadora montadora;
+	public Motocicleta() {
+	}
 
-    public Motocicleta() {
-    }
-
-    public Motocicleta(String chassi, String modelo, int cilindrada, int capacidadeTanque, float preco, Cor cor, EspecificacaoMoto.TipoMoto tipo, EspecificacaoMoto.Montadora montadora) {
+	public Motocicleta(String chassi, String modelo, int cilindrada, int capacidadeTanque, float preco, Cor cor, EspecificacaoMoto.TipoMoto tipo, EspecificacaoMoto.Montadora montadora) {
         this.chassi = chassi;
         this.modelo = modelo;
         this.cilindrada = cilindrada;
@@ -24,39 +22,39 @@ public class Motocicleta extends Veiculo{
         this.montadora = montadora;
     }
 
-    public int getCilindrada() {
-        return cilindrada;
-    }
+	public int getCilindrada() {
+		return cilindrada;
+	}
 
-    public void setCilindrada(int cilindrada) {
-        this.cilindrada = cilindrada;
-    }
+	public void setCilindrada(int cilindrada) {
+		this.cilindrada = cilindrada;
+	}
 
-    public int getCapacidadeTanque() {
-        return capacidadeTanque;
-    }
+	public int getCapacidadeTanque() {
+		return capacidadeTanque;
+	}
 
-    public void setCapacidadeTanque(int capacidadeTanque) {
-        this.capacidadeTanque = capacidadeTanque;
-    }
+	public void setCapacidadeTanque(int capacidadeTanque) {
+		this.capacidadeTanque = capacidadeTanque;
+	}
 
-    public EspecificacaoMoto.TipoMoto getTipo() {
-        return tipo;
-    }
+	public EspecificacaoMoto.TipoMoto getTipo() {
+		return tipo;
+	}
 
-    public void setTipo(EspecificacaoMoto.TipoMoto tipo) {
-        this.tipo = tipo;
-    }
+	public void setTipo(EspecificacaoMoto.TipoMoto tipo) {
+		this.tipo = tipo;
+	}
 
-    public EspecificacaoMoto.Montadora getMontadora() {
-        return montadora;
-    }
+	public EspecificacaoMoto.Montadora getMontadora() {
+		return montadora;
+	}
 
-    public void setMontadora(EspecificacaoMoto.Montadora montadora) {
-        this.montadora = montadora;
-    }
+	public void setMontadora(EspecificacaoMoto.Montadora montadora) {
+		this.montadora = montadora;
+	}
 
-    @Override
+	@Override
     public String toString() {
         return "Motocicleta{" +
                 "chassi='" + chassi + '\'' +

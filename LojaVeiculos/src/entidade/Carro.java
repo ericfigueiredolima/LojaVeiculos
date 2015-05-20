@@ -1,63 +1,63 @@
 package entidade;
 
-import objetoDeValor.Cambio;
-import objetoDeValor.Cor;
-import objetoDeValor.EspecificacaoCarro;
+import objetoDeValor.*;
 
+public class Carro extends Veiculo {
 
-public class Carro extends Veiculo{ //com a herança da classe Veiculo,não preciso reescrever as variáveis protegidas na classe veículo e fazer os getters and setters,além de poder utilizá-las
-     float motorizacao;
-     Cambio cambio;
-     EspecificacaoCarro.Montadora montadora;
-     EspecificacaoCarro.TipoCarro tipo;
+	float motorizacao;
+	Cambio cambio;
+	EspecificacaoCarro.Montadora montadora;
+	EspecificacaoCarro.TipoCarro tipo;
 
-    public Carro() {
-    }
+	public Carro() {
+	}
 
-    public Carro(String chassi, String modelo, float motorizacao, float preco, Cor cor, Cambio cambio, EspecificacaoCarro.Montadora montadora, EspecificacaoCarro.TipoCarro tipo) {
-        this.chassi = chassi;
-        this.modelo = modelo;
-        this.motorizacao = motorizacao;
-        this.preço = preco;
-        this.cor = cor;
-        this.cambio = cambio;
-        this.montadora = montadora;
-        this.tipo = tipo;
-    }
+	public Carro(String chassi, String modelo, float motorizacao, float preco,
+			Cor cor, Cambio cambio, EspecificacaoCarro.Montadora montadora,
+			EspecificacaoCarro.TipoCarro tipo) {
+		this.chassi = chassi;
+		this.modelo = modelo;
+		this.motorizacao = motorizacao;
+		this.preco = preco;
+		this.cor = cor;
+		this.cambio = cambio;
+		this.montadora = montadora;
+		this.tipo = tipo;
+	}
 
-    public EspecificacaoCarro.TipoCarro getTipo() {
-        return tipo;
-    }
+	public EspecificacaoCarro.TipoCarro getTipo() {
+		return tipo;
+	}
 
-    public void setTipo(EspecificacaoCarro.TipoCarro tipo) {
-        this.tipo = tipo;
-    }
+	public void setTipo(EspecificacaoCarro.TipoCarro tipo) {
+		this.tipo = tipo;
+	}
 
-    public float getMotorizacao() {
-        return motorizacao;
-    }
+	public float getMotorizacao() {
+		return motorizacao;
+	}
 
-    public void setMotorizacao(float motorizacao) {
-        this.motorizacao = motorizacao;
-    }
+	public void setMotorizacao(float motorizacao) {
+		this.motorizacao = motorizacao;
+	}
 
-    public Cambio getCambio() {
-        return cambio;
-    }
+	public Cambio getCambio() {
+		return cambio;
+	}
 
-    public void setCambio(Cambio cambio) {
-        this.cambio = cambio;
-    }
+	public void setCambio(Cambio cambio) {
+		this.cambio = cambio;
+	}
 
-    public EspecificacaoCarro.Montadora getMontadora() {
-        return montadora;
-    }
+	public EspecificacaoCarro.Montadora getMontadora() {
+		return montadora;
+	}
 
-    public void setMontadora(EspecificacaoCarro.Montadora montadora) {
-        this.montadora = montadora;
-    }
+	public void setMontadora(EspecificacaoCarro.Montadora montadora) {
+		this.montadora = montadora;
+	}
 
-    @Override
+	@Override
     public String toString() {
         return "Carro{" +
                 "chassi='" + chassi + '\'' +
