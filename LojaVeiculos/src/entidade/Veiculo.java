@@ -6,7 +6,7 @@ public abstract class Veiculo {
 
 	protected String chassi;
 	protected String modelo;
-	Cambio cor;
+	Cor cor;
 	protected float preco;
 
 	public String getChassi() {
@@ -25,11 +25,11 @@ public abstract class Veiculo {
 		this.modelo = modelo;
 	}
 
-	public Cambio getCor() {
+	public Cor getCor() {
 		return cor;
 	}
 
-	public void setCor(Cambio cor) {
+	public void setCor(Cor cor) {
 		this.cor = cor;
 	}
 
