@@ -236,7 +236,7 @@ public class Test {
         carro.setModelo("Focus Hatch");
         carro.setMontadora(EspecificacaoCarro.Montadora.FORD);
         carro.setMotorizacao(1.6f);
-        carro.setPreço(68.000f);
+        carro.setPreco(68.000f);
         carro.setTipo(EspecificacaoCarro.TipoCarro.HATCH);
 
         loja.adicionarCarro(carro);
@@ -260,7 +260,7 @@ public class Test {
         moto.setCor(Cor.AZUL);
         moto.setModelo("Focus Hatch");
         moto.setMontadora(EspecificacaoMoto.Montadora.HARLEY_DAVIDSON);
-        moto.setPreço(68.000f);
+        moto.setPreco(68.000f);
         moto.setTipo(EspecificacaoMoto.TipoMoto.ESPORTIVA);
 
         loja.adicionarMoto(moto);

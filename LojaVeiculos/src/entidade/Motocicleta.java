@@ -18,7 +18,7 @@ public class Motocicleta extends Veiculo{
         this.modelo = modelo;
         this.cilindrada = cilindrada;
         this.capacidadeTanque = capacidadeTanque;
-        this.preço = preco;
+        this.preco = preco;
         this.cor = cor;
         this.tipo = tipo;
         this.montadora = montadora;
@@ -63,7 +63,7 @@ public class Motocicleta extends Veiculo{
                 ", modelo='" + modelo + '\'' +
                 ", cilindrada=" + cilindrada +
                 ", capacidade do tanque=" + capacidadeTanque +
-                ", preco=" + preço +
+                ", preco=" + preco +
                 ", cor=" + cor +
                 ", tipo=" + tipo +
                 ", montadora=" + montadora +
