@@ -8,63 +8,60 @@ import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-
 public class Test {
 
-    Scanner sc = new Scanner(System.in);
-    Loja loja; //loja
+	Scanner sc = new Scanner(System.in);
+	Loja loja;
 
-    public static void main(String[] args) {
-        Test t = new Test();
-        t.init();
-    }
+	public static void main(String[] args) {
+		Test t = new Test();
+		t.init();
+	}
 
-    public void init() {
-        loja = new Loja("Montadora Teste Ltda.", "Rua. Sao Jose, 90 - Centro, Rio de Janeiro - RJ, 20010-020");
-        menu();
-    }
+	public void init() {
+		loja = new Loja("Montadora Teste Ltda.",
+				"Rua. Sao Jose, 90 - Centro, Rio de Janeiro - RJ, 20010-020");
+		menu();
+	}
 
-    public void menu() {
-        int opcao = 0;
-        do {
-            System.out.println(loja + "\n");
+	public void menu() {
+		int opcao = 0;
+		do {
+			System.out.println(loja + "\n");
 
-            System.out.println("1 - Adicionar Carro \n" +
-                    "2 - Adicionar Moto \n" +
-                    "3 - Listar Carros \n" +
-                    "4 - Listar Motos \n" +
-                    "5 - Buscar Carro \n" +
-                    "6 - Buscar Moto \n" +
-                    "0 - Sair \n");
+			System.out.println("1 - Adicionar Carro \n"
+					+ "2 - Adicionar Moto \n" + "3 - Listar Carros \n"
+					+ "4 - Listar Motos \n" + "5 - Buscar Carro \n"
+					+ "6 - Buscar Moto \n" + "0 - Sair \n");
 
-            System.out.println("Escolha o numero da opcao desejada:");
-            opcao = sc.nextInt();
+			System.out.println("Escolha o numero da opcao desejada:");
+			opcao = sc.nextInt();
 
-            switch (opcao) {
-                case 0: //é tipo um default
-                    break;
-                case 1:
-                    adicionarCarro();
-                    break;
-                case 2:
-                    break;
-                case 3:
-                    loja.listarEstoqueCarros();
-                    break;
-                case 4:
-                    loja.listarEstoqueMotos();
-                    break;
-                case 5:
-                    break;
-                case 6:
-                    break;
-            }
-        } while (opcao != 0);
+			switch (opcao) {
+			case 0:
+				break;
+			case 1:
+				adicionarCarro();
+				break;
+			case 2:
+				break;
+			case 3:
+				loja.listarEstoqueCarros();
+				break;
+			case 4:
+				loja.listarEstoqueMotos();
+				break;
+			case 5:
+				break;
+			case 6:
+				break;
+			}
+		} while (opcao != 0);
 
-        System.out.println("Programa finalizado");
-    }
+		System.out.println("Programa finalizado");
+	}
 
-    public void adicionarCarro() {
+	public void adicionarCarro() {
         Carro novoCarro = new Carro();
 
         System.out.println("Cadastro de Carro:");
@@ -94,7 +91,7 @@ public class Test {
         while (true) {
             try {
                 float preco = sc.nextFloat();
-                novoCarro.setPreço(preco);
+                novoCarro.setPreco(preco);
                 sc.nextLine();
                 break;
             } catch (InputMismatchException e) {
@@ -231,7 +228,7 @@ public class Test {
         System.out.println("Carro cadastrado com sucesso!");
     }
 
-    public void testar() {
+	public void testar() {
         Carro carro = new Carro();
         carro.setCambio(Cambio.AUTOMATICO);
         carro.setChassi("F00001");
