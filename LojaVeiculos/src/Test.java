@@ -132,7 +132,7 @@ public class Test {
         }
         
 
-        System.out.println("Informe o Câmbio do carro: ");
+        System.out.println("Informe o CÃ¢mbio do carro: ");
         ArrayList<Cambio> cambios = new ArrayList<Cambio>(Arrays.asList(Cambio.values()));
         for (int i = 0; i < cambios.size(); i++) {
             System.out.print((i + 1) + "-" + cambios.get(i) + " ");
