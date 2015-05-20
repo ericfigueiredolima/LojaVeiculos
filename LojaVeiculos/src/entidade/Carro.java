@@ -5,7 +5,7 @@ import objetoDeValor.Cor;
 import objetoDeValor.EspecificacaoCarro;
 
 
-public class Carro extends Veiculo{ //com a herança da classe Veiculo,não preciso reescrever as variáveis protegidas na classe veículo e fazer os getters and setters,além de poder utilizá-las
+public class Carro extends Veiculo{ //com a heranÃ§a da classe Veiculo,nÃ£o preciso reescrever as variÃ¡veis protegidas na classe veÃ­culo e fazer os getters and setters,alÃ©m de poder utilizÃ¡-las
      float motorizacao;
      Cambio cambio;
      EspecificacaoCarro.Montadora montadora;
