@@ -6,13 +6,13 @@ public class EspecificacaoCarro extends Especificacao{
 		BMW,
 		HONDA,
 		CHEVROLET,
-	    FORD,
-	    HYUNDAI,
-	    KIA,
-	    NISSAN,
-	    RENAULT,
-	    TOYOTA,
-	    VOLKSWAGEN
+	        FORD,
+	        HYUNDAI,
+	        KIA,
+	        NISSAN,
+	        RENAULT,
+	        TOYOTA,
+	        VOLKSWAGEN
 	}
 	
 	public enum TipoCarro {
@@ -20,7 +20,7 @@ public class EspecificacaoCarro extends Especificacao{
 		SEDA,
 		MONOVOLUME,
 		PERUA,
-	    PICAPE,
+	        PICAPE,
 		SUV, 
 		ESPORTIVO,
 		JIPE
